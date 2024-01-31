@@ -1,0 +1,210 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Delegation in jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <h2>Click on list items to toggle their class</h2>
+
+  <ul id="parentList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    $(document).ready(function(){
+      $("#parentList").on("click", "li", function(){
+        $(this).toggleClass("selected");
+      });
+    });
+  </script>
+
+  <style>
+    li {
+      cursor: pointer;
+    }
+    .selected {
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery ID Selector</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <div id="myDiv">
+   <p>This is a div with the ID "myDiv".</p>
+  </div>
+
+  <script>
+    // Using jQuery to select and manipulate the element with the ID "myDiv"
+    $(document).ready(function(){
+      // Selecting the element with the ID "myDiv"
+      var myDiv = $("#myDiv");
+
+      // Manipulating the element (for example, changing its text content)
+      myDiv.text("This text is changed using jQuery!");
+    });
+  </script> -->
+
+<!-- </body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Class Selector</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <p class="myParagraph">This is a paragraph with the class "myParagraph".</p>
+  <p class="myParagraph">This is another paragraph with the class "myParagraph".</p>
+
+  <script>
+    // Using jQuery to select and manipulate elements with the class "myParagraph"
+    $(document).ready(function(){
+      // Selecting elements with the class "myParagraph"
+      var myParagraphs = $(".myParagraph");
+
+      // Manipulating the elements (for example, changing their text content)
+      myParagraphs.text("This text is changed using jQuery!");
+    });
+  </script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Tag Name Selector</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+
+  <script>
+    // Using jQuery to select and manipulate <p> elements
+    $(document).ready(function(){
+      // Selecting <p> elements
+      var paragraphs = $("p");
+
+      // Manipulating the elements (for example, changing their text content)
+      paragraphs.text("This text is changed using jQuery!");
+    });
+  </script>
+
+</body>
+</html>
+
+ -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Example</title>
+</head>
+<body>
+
+  <script>
+    // Converting JavaScript Object to JSON
+    var person = {
+      name: "John Doe",
+      age: 30,
+      city: "New York",
+      isStudent: false,
+      courses: ["Math", "History", "English"]
+    };
+
+    var jsonString = JSON.stringify(person);
+    console.log("JSON String:", jsonString);
+
+    // Parsing JSON to JavaScript Object
+    var jsonStringFromServer = '{"name":"Jane Smith","age":25,"city":"San Francisco","isStudent":true,"courses":["Science","Art","Spanish"]}';
+    var personFromServer = JSON.parse(jsonStringFromServer);
+    console.log("Parsed JavaScript Object:", personFromServer);
+  </script>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Array Example</title>
+</head>
+<body>
+
+  <h2>Fruits List</h2>
+
+  <script>
+    // Creating and displaying a JavaScript array
+    var fruits = ["Apple", "Banana", "Orange", "Grapes"];
+
+    // Converting JavaScript Array to JSON Array
+    var jsonArray = JSON.stringify(fruits);
+    console.log("JSON Array:", jsonArray);
+
+    // Parsing JSON Array to JavaScript Array
+    var parsedFruits = JSON.parse(jsonArray);
+    console.log("Parsed JavaScript Array:", parsedFruits);
+
+    // Displaying the fruits list
+    document.write("<ul>");
+    for (var i = 0; i < parsedFruits.length; i++) {
+      document.write("<li>" + parsedFruits[i] + "</li>");
+    }
+    document.write("</ul>");
+  </script>
+
+</body>
+</html>

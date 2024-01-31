@@ -1,0 +1,410 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>charAt Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your string
+      var myString = "Hello World!";
+
+      // Get the character at a specific position
+      var position = 1; // Change this to the desired position
+      var charAtPosition = myString.charAt(position);
+
+      // Display the result
+      $("#result").text("Character at position " + position + ": " + charAtPosition);
+    });
+  </script>
+</head>
+<body>
+  <div id="result"></div>
+</body>
+</html> -->
+
+
+<!-- CONCAT -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Concatenation Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Strings to concatenate
+      var string1 = "Hello, ";
+      var string2 = "World!";
+
+      // Using the + operator for concatenation
+      var result1 = string1 + string2;
+
+      // Using the concat method
+      var result2 = string1.concat(string2);
+
+      // Display the results
+      $("#result1").text("Concatenation using + operator: " + result1);
+      $("#result2").text("Concatenation using concat method: " + result2);
+    });
+  </script>
+</head>
+<body>
+  <div id="result1"></div>
+  <div id="result2"></div>
+</body>
+</html>
+ -->
+
+<!-- CONCAT -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>indexOf Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your string
+      var myString = "Hello, World!";
+
+      // Find the index of a specific substring
+      var searchString = "World";
+      var indexOfSubstring = myString.indexOf(searchString);
+
+      // Display the result
+      $("#result").text("Index of '" + searchString + "': " + indexOfSubstring);
+    });
+  </script>
+</head>
+<body>
+  <div id="result"></div>
+</body>
+</html> -->
+
+<!-- LENGTH -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Length Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your string
+      var myString = "Hello, World!";
+
+      // Get the length of the string
+      var stringLength = myString.length;
+
+      // Display the result
+      $("#result").text("Length of the string: " + stringLength);
+    });
+  </script>
+</head>
+<body>
+  <div id="result"></div>
+</body>
+</html> -->
+
+
+<!-- FOR EACH -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your array or collection
+      var myArray = ["Apple", "Banana", "Orange", "Grapes"];
+
+      // Iterate over the array using $.each()
+      $.each(myArray, function (index, value) {
+        // Display each element in a list
+        $("#result").append("<li>" + value + "</li>");
+      });
+    });
+  </script>
+</head>
+<body>
+  <ul id="result"></ul>
+</body>
+</html> -->
+
+
+<!-- PUSH -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>push() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your array
+      var myArray = ["Apple", "Banana", "Orange"];
+
+      // Use push() to add elements to the array
+      myArray.push("Grapes", "Kiwi");
+
+      // Display the updated array
+      $.each(myArray, function (index, value) {
+        $("#result").append("<li>" + value + "</li>");
+      });
+    });
+  </script>
+</head>
+<body>
+  <ul id="result"></ul>
+</body>
+</html>
+ -->
+
+
+
+<!-- POP -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pop() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your array
+      var myArray = ["Apple", "Banana", "Orange", "Grapes", "Kiwi"];
+      var removedElement = myArray.pop();
+      $.each(myArray, function (index, value) {
+        $("#result").append("<li>" + value + "</li>");
+      });
+
+      $("#removedElement").text("Removed element: " + removedElement);
+    });
+  </script>
+</head>
+<body>
+  <ul id="result"></ul>
+  <div id="removedElement"></div>
+</body>
+</html> -->
+
+
+<!-- SUBSTR -->
+
+ <!--  --><!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>substr() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your string
+      var myString = "Hello, World!";
+
+      // Use substr() to extract a substring
+      var substring = myString.substr(7, 5); // Starting from index 7, extract 5 characters
+
+      // Display the original string and the extracted substring
+      $("#originalString").text("Original String: " + myString);
+      $("#extractedSubstring").text("Extracted Substring: " + substring);
+    });
+  </script>
+</head>
+<body>
+  <div id="originalString"></div>
+  <div id="extractedSubstring"></div>
+</body>
+</html>
+ -->
+
+<!-- REVERSE -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse String Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your string
+      var myString = "Hello, World!";
+
+      // Use split, reverse, and join to reverse the string
+      var reversedString = myString.split('').reverse().join('');
+
+      // Display the original string and the reversed string
+      $("#originalString").text("Original String: " + myString);
+      $("#reversedString").text("Reversed String: " + reversedString);
+    });
+  </script>
+</head>
+<body>
+  <div id="originalString"></div>
+  <div id="reversedString"></div>
+</body>
+</html> -->
+
+
+<!-- SORT -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sort() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your array
+      var myArray = ["Orange", "Banana", "Apple", "Grapes", "Kiwi"];
+
+      // Use sort() to sort the array
+      myArray.sort();
+
+      // Display the sorted array
+      $.each(myArray, function (index, value) {
+        $("#result").append("<li>" + value + "</li>");
+      });
+    });
+  </script>
+</head>
+<body>
+  <ul id="result"></ul>
+</body>
+</html> -->
+
+
+<!-- LOWER UPPER -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toLowerCase() and toUpperCase() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your string
+      var myString = "Hello, World!";
+
+      // Use toLowerCase() to convert the string to lowercase
+      var lowerCaseString = myString.toLowerCase();
+
+      // Use toUpperCase() to convert the string to uppercase
+      var upperCaseString = myString.toUpperCase();
+
+      // Display the original string, lowercase, and uppercase versions
+      $("#originalString").text("Original String: " + myString);
+      $("#lowerCaseString").text("Lowercase String: " + lowerCaseString);
+      $("#upperCaseString").text("Uppercase String: " + upperCaseString);
+    });
+  </script>
+</head>
+<body>
+  <div id="originalString"></div>
+  <div id="lowerCaseString"></div>
+  <div id="upperCaseString"></div>
+</body>
+</html> -->
+
+
+<!-- TOSTRING -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toString() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Your variable of any type
+      var myVariable = 42;
+
+      // Use toString() to convert the variable to a string
+      var stringRepresentation = myVariable.toString();
+
+      // Display the original variable and its string representation
+      $("#originalVariable").text("Original Variable: " + myVariable);
+      $("#stringRepresentation").text("String Representation: " + stringRepresentation);
+    });
+  </script>
+</head>
+<body>
+  <div id="originalVariable"></div>
+  <div id="stringRepresentation"></div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#pp").append("Hello aptech IIC");
+  });});
+
+  $(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#pp1").slideToggle("slow");
+  });});
+
+
+
+// $(document).ready(function(){
+//  $("#btn2").on('click', function(){
+//     $("#pp1").slideToggle(500);
+//  });
+// });
+
+
+  $(document).ready(function(){
+  $("#btn3").click(function(){
+    $("#p3").css("background-color", "yellow");
+  });
+});
+</script>
+
+  <div class="row">
+  	<div id="pp" class="col-md-4"><h1><b>Heading</b></h1><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  	<br><button id="btn1">Learn More</button>
+	</div>
+
+  	<div class="col-md-4"><div id="pp1"><h1><b>Heading</b></h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  	</div>
+    <button id="btn2">Slide Toggle</button>
+  </div>
+
+  	<div class="col-md-4"><div id="p3"><h1><b>Heading</b></h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  	</div><button id="btn3">Click to Change Color</button></div>
+
+</div>
+
+</body>
+</html>
